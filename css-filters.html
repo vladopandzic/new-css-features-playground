@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>New features CSS</title>
+     <link rel="stylesheet" type="text/css" href="index.css">
+       <link rel="stylesheet" type="text/css" href="css-filters.css">
+  </head>
+  <body>
+
+       <nav>
+        <div class="logo-text nav-item"><a href="index.html">CSS CUSTOM FEATURES</a></div>
+        <div class="nav-item"><a href="custom-properties.html">CSS custom properties</a></div>
+        <div class="nav-item"><a href="css-filters.html">CSS filters</a></div>
+      </nav> 
+   
+            <div class="controls">
+             <input type="radio" name="effect" value="sepia" onClick="handleClick()" />Sepia
+             <input type="radio" name="effect" value="blur" onClick="handleClick()" />Blur
+             <input type="radio" name="effect" value="grayscale" onClick="handleClick()" />Grayscale
+             |
+       <input type="range" name="size"  onchange="handleChange(this)" value="30" />Size
+          </div>
+    <div>
+      <img src="images/stone-house.jpg" id="img"/>
+    </div>
+     <script type="text/javascript">
+    
+    function handleClick(){
+  var rates = document.getElementsByName('effect');
+     var rate_value;
+      for(var i = 0; i < rates.length; i++){
+       if(rates[i].checked){
+          rate_value = rates[i].value;
+          document.getElementById("img").className=" "+rate_value;
+      }
+    }
+    }
+    function handleChange(e){
+       
+           document.documentElement.style.setProperty(`--size`, e.value);
+    }
+  
+
+    </script>
+  </body>
+</html>

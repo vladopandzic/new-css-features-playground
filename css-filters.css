@@ -1,0 +1,28 @@
+:root{
+
+    --size:30;
+    --sizeInPx:calc(var(--size)*1px);
+    --sizeInPercentage:calc(var(--size)*1%);
+}
+img.blur{
+
+  filter:blur(var(--sizeInPx));
+
+}
+img.sepia{
+
+  filter:sepia(var(--sizeInPercentage));
+}
+img.grayscale{
+
+  filter:grayscale(var(--sizeInPercentage));
+
+}
+.controls{
+    display: flex;
+    margin:10px;
+    background-color: palevioletred;
+    color:white;
+    justify-content: center;
+    padding: 15px;
+}

@@ -1,9 +1,10 @@
 :root{
       --color:purple;
+       --size:8;
+      --sizeCalc:calc(var(--size)*1em);
 }
 .card{
-    --size:8;
-    --sizeCalc:calc(var(--size)*1em);
+   
     background-color:var(--color,red);
     padding:var(--sizeCalc);
 
