@@ -1,0 +1,23 @@
+:root{
+      --color:purple;
+}
+.card{
+    --size:8;
+    --sizeCalc:calc(var(--size)*1em);
+    background-color:var(--color,red);
+    padding:var(--sizeCalc);
+
+    width:20%;
+}
+.text-inside-card{
+    color:white;
+    font-size:calc(var(--sizeCalc)/2); 
+    
+}
+.card.pink{
+    --color:pink;
+}
+h1{
+    color:var(--color,red);
+    
+}

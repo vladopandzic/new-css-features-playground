@@ -1,0 +1,33 @@
+a{
+    color:white;
+    text-decoration: none;
+    cursor:pointer;
+}
+.logo-text{
+    flex:7;
+    font-size:1.7em;
+}
+nav{
+    display:flex;
+    background-color: #125896;
+    padding: 10px;
+    color:white;
+    font-family: arial;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.nav-item{
+  text-transform: uppercase;
+  padding:10px;
+  margin:auto;
+
+}
+@media screen and (max-width:720px){
+    nav{
+        flex-direction: column;
+    }
+    .nav-item{
+        display: flex;
+          margin:auto;
+    }
+}
